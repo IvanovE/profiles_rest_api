@@ -24,6 +24,7 @@ SECRET_KEY = 'django-insecure-zzotz+ocwz(xdcc!u#pxw!dh(1w+=u0qjayis$%s73d1kp$tu#
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+# DEBUG = bool(int(os.environ.get('DEBUG', 1)))
 
 ALLOWED_HOSTS = []
 
@@ -128,3 +129,5 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'profiles_api.UserProfile'
+
+# STATIC_ROOT = 'static/'
